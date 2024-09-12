@@ -3,7 +3,7 @@ import torchvision.transforms as transforms
 import torch
 
 class ImageClassificationDataset(Dataset):
-    CLASSES = {'field': 0, 'forest': 1, 'water': 2, 'road': 3, 'building': 4, 'background': 5}
+    CLASSES = {"Write u classes like :' blackgound' : 0"}
 
     def __init__(self, image_paths, classes=None):
         self.image_paths = image_paths
