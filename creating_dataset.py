@@ -6,8 +6,7 @@ import numpy as np
 import torchvision.transforms as transforms
 
 class SegmentationDataSet(Dataset):
-    CLASSES = {'field': (255, 128, 0), 'forest': (0, 255, 0), 'water': (0, 0, 255), 'road': (178, 178, 178),
-               'building': (255, 0, 0), 'background': (0, 0, 0)}
+    CLASSES = {"Write u classes RGB color like : 'blackground' : (0,0,0) " }
 
     def __init__(self, image_dir, mask_dir, classes=None, class_id=None, augmentation=None, preprocessing=None):
         self.ids = os.listdir(image_dir)
